@@ -14,7 +14,7 @@ public class Insertar {
 		String nombre;
 		int edad;
 		try {
-			Connection miCon=Conexion.conectar();
+			Connection miCon=Conexion.conectar("acceso");
 			nombre = Leer.pedirCadena("Introduce un nombre para la persona: ");
 			edad = Leer.pedirEntero("Introduce una edad: ");
 			Persona p = new Persona(nombre, edad);

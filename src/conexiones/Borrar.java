@@ -13,7 +13,7 @@ public class Borrar {
 		// TODO Auto-generated method stub
 		String nombre;
 		try {
-			Connection miCon=Conexion.conectar();
+			Connection miCon=Conexion.conectar("acceso");
 			nombre = Leer.pedirCadena("Introduce el nombre de la persona a borrar: ");
 //			PreparedStatement borrar= miCon.prepareStatement("DELETE FROM `personas` WHERE `nombre` = 'merche'");
 			PreparedStatement borrar= miCon.prepareStatement("DELETE FROM `personas` WHERE `nombre` = (?)");

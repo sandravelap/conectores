@@ -18,7 +18,7 @@ public class Principal {
 		String nombre;
 		int edad;
 		try {
-		Connection miCon=Conexion.conectar();
+		Connection miCon=Conexion.conectar("acceso");
 		PreparedStatement stmt= miCon.prepareStatement("select * from personas where nombre like 'merche'");
 		ResultSet results = stmt.executeQuery();
 		while(results.next()) {

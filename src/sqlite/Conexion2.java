@@ -4,12 +4,15 @@ import org.sqlite.jdbc4.*;
 
 import java.sql.*;
 
-public class Conexion{
+public class Conexion2{
 	
-	private static final String URL="jdbc:sqlite:C:/sqlite/chinook.db";
+	private static  String URL="jdbc:sqlite:C:/sqlite/";//chinook.db";
+//	private static final String USUARIO = "developer";
+//	private static final String CLAVE = "alumno";
 	
-	public static Connection conectar() {
+	public static Connection conectar(String nombreBD) {
 		Connection conexion = null;
+		URL = URL + nombreBD;
 		try {
 			conexion = DriverManager.getConnection(URL);
 			System.out.println("Conexión OK");
@@ -20,7 +23,7 @@ public class Conexion{
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Connection miCon = conectar();
+//		Connection miCon = conectar();
 	}
 
 }

@@ -17,6 +17,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/sqlite/javatuples-1.2/lib/javatuples-1.2.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/intro/src/Files"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
